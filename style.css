@@ -1,0 +1,643 @@
+body {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Golos Text;
+    color: rgba(49, 49, 49, 1);
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+.background {
+    background-color: rgba(233, 222, 212, 1);
+    width: 1366px;
+    height: 700px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.background-ellipse {
+    width: 660px;
+    height: 660px;
+    border-radius: 50%;
+    background: rgba(251, 206, 81, 1);
+    position: absolute;
+    top: -44px;
+    right: 33px;
+}
+
+.background-ellipse-text {
+    content: '';
+    background-image: url('./img/ellipse_text.png');
+    background-size: cover;
+    width: 660px;
+    height: 660px;
+    mix-blend-mode: overlay;
+
+}
+
+.background-ellipse::after {
+    content: '';
+    background-image: url('./img/chesses.png');
+    background-size: cover;
+    width: 477.78px;
+    height: 370.39px;
+    position: absolute;
+    top: 208.5px;
+    right: 126.04px;
+}
+
+.background .background-image {
+    background-image: url('./img/background_header.png');
+    background-size: cover;
+    position: absolute;
+    width: 1366px;
+    height: 700px;
+    top: 0;
+    left: 0;
+    mix-blend-mode: color-burn;
+}
+
+.background-city {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 463.82px;
+    background-image: url('./img/city.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom -22.82px right -141px;
+}
+
+.background::after {
+    content: '';
+    background-image: url('./img/knights_and_pawn.png');
+    background-size: cover;
+    width: 485.8px;
+    height: 268.11px;
+    position: absolute;
+    bottom: -50.7px;
+    right: 44.55px;
+}
+
+header {
+    position: relative;
+    padding: 26px 72px 0 72px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+}
+
+main-navigation {
+    margin: 26px auto 62px 0;
+    padding: 0;
+    display: flex;
+}
+
+.logo {
+    display: block;
+    width: 245.17px;
+}
+
+img {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+main a {
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration: none;
+    color: rgba(48, 87, 162, 1);
+}
+
+section {
+    position: relative;
+    padding-left: 72px;
+    padding-right: 72px;
+}
+
+.preview {
+    padding-top: 61px;
+    padding-bottom: 130px;
+}
+
+.preview-text {
+    margin: 0;
+    padding: 0;
+    width: 542px;
+
+}
+
+.announce p {
+    margin: 0;
+    padding: 0;
+    font-family: Merriweather;
+    font-size: 60px;
+    line-height: 66px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.announce .center-text {
+    display: block;
+    text-align: center;
+}
+
+.announce .right-text {
+    display: block;
+    text-align: right;
+}
+
+.announce-text {
+    font-weight: 400;
+    font-family: Golos Text;
+    font-size: 18px;
+    line-height: 23.4px;
+    text-align: center;
+    margin: 24px auto 40px;
+}
+
+.links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.links a {
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.8px;
+    display: flex;
+    align-items: center;
+    width: 263px;
+    height: 72px;
+    box-sizing: border-box;
+    padding: 20px 49px;
+    border-radius: 66px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.link-about {
+    color: rgba(31, 31, 31, 1);
+    border: 2px solid rgba(31, 31, 31, 1);
+}
+
+.link-about:hover {
+    background-color: rgba(31, 31, 31, 1);
+    color: rgba(255, 255, 255, 1);
+    border: none;
+}
+
+.link-support {
+    background-color: rgba(31, 31, 31, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.link-support:hover {
+    background-color: rgba(251, 206, 81, 1);
+    color: rgba(31, 31, 31, 1);
+}
+
+.support-tournament {
+    padding-top: 80px;
+}
+
+.about-tournament p,
+.support-tournament p {
+    font-family: Merriweather;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 48.6px;
+    text-transform: uppercase;
+    display: inline;
+    margin: 0;
+}
+
+.red-text {
+    font-weight: 700;
+    color: rgba(245, 73, 50, 1);
+}
+
+.support-content {
+    display: flex;
+    margin-bottom: 17px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.support-text {
+    width: 764px;
+}
+
+.support-content img {
+    border-radius: 50%;
+}
+
+.about-tournament {
+    padding-left: 45px;
+    margin-bottom: 165px;
+}
+
+.tournament-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.player-img {
+    margin: 0;
+    padding: 0;
+    height: 609px;
+    width: 528px;
+    background-image: url('./img/play.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.player-img::after {
+    display: block;
+    content: '';
+    height: 609px;
+    width: 528px;
+    background-image: url('./img/backgroung_img.png');
+    mix-blend-mode: color-burn;
+}
+
+.tournament-text {
+    padding-top: 47px;
+    width: 704px;
+}
+
+.condition {
+    margin: 60px 0 48px 0;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+td {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    box-sizing: border-box;
+    padding-left: 16px;
+    height: 56px;
+    border-left: 2px solid rgba(208, 208, 208, 1);
+    border-top: 2px solid rgba(208, 208, 208, 1);
+}
+
+.condition .first-line {
+    height: 40px;
+    vertical-align: top;
+}
+
+.condition .last-line {
+    height: 40px;
+    vertical-align: bottom;
+}
+
+td {
+    width: 398px;
+}
+
+td:first-child {
+    width: 306px;
+}
+
+tr:first-child td {
+    border-top: none;
+}
+
+td:first-child {
+    padding-left: 0;
+    font-weight: 400;
+    opacity: 70%;
+    border-left: none;
+}
+
+.city-plan {
+    margin-bottom: 200px;
+}
+
+.city-plan-title {
+    width: 806px;
+    margin-bottom: 54px;
+    position: relative;
+}
+
+.city-plan-title a {
+    display: inline-block;
+    margin-left: auto;
+    position: absolute;
+    right: 225px;
+    top: 72px;
+}
+
+.city-plan-title p {
+    word-wrap: wrap;
+    width: 280px;
+    margin: 0;
+}
+
+del {
+    text-decoration: line-through rgba(245, 73, 50, 1) 2px;
+    margin-right: 12px;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-family: Merriweather;
+    font-size: 54px;
+    font-weight: 400;
+    line-height: 64.8px;
+    margin: 0;
+}
+
+.city-plan-title h2 {
+    display: inline;
+}
+
+.steps {
+    padding: 0;
+    list-style: none;
+    counter-reset: item;
+    position: relative;
+    display: grid;
+    grid-template-columns: 394px 394px 394px;
+    grid-template-rows: 112px 112px 136px;
+    gap: 20px;
+}
+
+.step {
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    gap: 16px;
+    padding: 20px;
+}
+
+.step p {
+    width: 302px;
+    margin: 0;
+    padding: 0;
+}
+
+.step:nth-child(3) {
+    grid-row-start: span 2;
+}
+
+.step:nth-child(7) {
+    grid-column-start: span 2;
+}
+
+.step:nth-child(7) p {
+    width: 446px;
+    margin-right: auto;
+}
+
+.step::after {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    border-radius: 50%;
+    content: counter(item);
+    counter-increment: item;
+    background-color: rgba(255, 255, 255, 1);
+    justify-content: center;
+    align-items: center;
+}
+
+.steps::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-image: url('./img/backgroung_img.png');
+    mix-blend-mode: color-burn;
+}
+
+.step::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    background-image: url('./img/union_stamp_paper.png');
+    z-index: -1;
+    opacity: 0.8;
+}
+
+.city-plan::after {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 210px;
+    display: block;
+    background-image: url('./img/airplane.png');
+    background-size: cover;
+    top: 351px;
+    right: 10px;
+}
+
+.participants-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.scroll-list-box {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    display: flex;
+    gap: 16.5px;
+    align-items: center;
+}
+
+.disabled {
+    opacity: 0.6;
+}
+
+.arrow {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(49, 49, 49, 1);
+    border-radius: 50%;
+    border: none;
+}
+
+.arrow:hover {
+    background-color: rgba(251, 206, 81, 1);
+}
+
+.arrow:disabled {
+    background-color: rgba(214, 214, 214, 1);
+}
+
+.carousel {
+    width: 1222px;
+    overflow: hidden;
+
+}
+
+.participants {
+    width: 9999px;
+    padding: 0;
+    margin-top: 60px;
+    margin-bottom: 140px;
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.participant {
+    width: 394px;
+}
+
+.participant img {
+    margin: 0 auto 28px auto;
+    border-radius: 50%;
+}
+
+.participant h3 {
+    margin: 0;
+    margin-bottom: 6px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    text-align: center;
+}
+
+.participant .titul {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    opacity: 60%;
+    text-align: center;
+}
+
+.participant a {
+    font-family: Golos Text;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 111px;
+    height: 33px;
+    margin: 0 auto 0 auto;
+    border: rgba(48, 87, 162, 1) solid 1px;
+    border-radius: 62px;
+}
+
+.participant a:hover {
+    background-color: rgba(48, 87, 162, 1);
+    color: rgba(255, 255, 255, 1);
+}
+
+.running-line-box {
+    display: block;
+    width: 1366px;
+    min-height: 60px;
+    overflow: hidden;
+}
+
+.running-line {
+    padding: 18px 12px;
+    background-color: rgba(245, 73, 50, 1);
+    display: flex;
+    width: 2335px;
+}
+
+.running-line li::after {
+    display: flex;
+    content: '';
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.running-line-text {
+    font-family: Merriweather;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 24.2px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-transform: uppercase;
+    list-style: none;
+    color: rgba(255, 255, 255, 1);
+    animation: running-text 20s infinite linear
+}
+
+@keyframes running-text {
+    0% {
+        transform: translate(1366px, 0);
+    }
+
+    100% {
+        transform: translate(-100%, 0);
+    }
+}
+
+.running-line-text li {
+    display: flex;
+    align-items: center;
+}
+
+
+
+footer {
+    margin: 0;
+    padding: 72px;
+    padding-top: 40px;
+    background-color: rgba(233, 222, 212, 1);
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.6;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
