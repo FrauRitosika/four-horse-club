@@ -5,16 +5,19 @@ let currentScrollPosition = 0;
 const listParticipants = document.querySelector('.participants');
 const participants = listParticipants.querySelectorAll('.participant');
 const scrollPageCount = Math.ceil(participants.length);
-const scrollCounter = document.querySelector('.scroll-list-box');
-const currentScrollPage = document.querySelector('.visible-count');
+const scrollCounter = document.querySelector('.js-scroll-tools');
+const currentScrollPage = document.querySelector('.js-visible-count');
 
-document.querySelector('.total').textContent = scrollPageCount;
+const total = document.querySelector('.js-total');
+if (total) {
+    total.textContent = scrollPageCount;
+}
 
 let currentPage = COUNT_VISIBLE_PARTICIPANT;
 currentScrollPage.textContent = currentPage;
 
-const buttonRight = scrollCounter.querySelector('.right');
-const buttonLeft = scrollCounter.querySelector('.left');
+const buttonRight = scrollCounter.querySelector('.js-right-arrow');
+const buttonLeft = scrollCounter.querySelector('.js-left-arrow');
 
 setButtonDisabled();
 
@@ -33,7 +36,7 @@ scrollCounter.onclick = function(event) {
     }
 
     setButtonDisabled();
-    listParticipants.style.marginLeft = currentScrollPosition + 'px';
+    listParticipants.style.marginLeft = `${currentScrollPosition}px`;
     currentScrollPage.textContent = currentPage;
 };
 

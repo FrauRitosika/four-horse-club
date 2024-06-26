@@ -1,17 +1,20 @@
 body {
-    position: relative;
-    width: 1366px;
-    margin: 0 auto;
-    padding: 0;
+    margin: 0;
     font-family: Golos Text;
     color: rgba(49, 49, 49, 1);
     background-color: rgba(255, 255, 255, 1);
 
 }
 
+.page-container {
+    position: relative;
+    width: 1366px;
+    margin: 0 auto;
+}
+
 .background {
     background-color: rgba(233, 222, 212, 1);
-    width: 1366px;
+    width: 100%;
     height: 700px;
     position: absolute;
     overflow: hidden;
@@ -52,7 +55,7 @@ body {
     background-image: url('./img/background_header.png');
     background-size: cover;
     position: absolute;
-    width: 1366px;
+    width: 100%;
     height: 700px;
     top: 0;
     left: 0;
@@ -98,13 +101,11 @@ main-navigation {
 
 .logo {
     display: block;
-    width: 245.17px;
+    max-width: 245.17px;
 }
 
 img {
     display: block;
-    margin: 0;
-    padding: 0;
 }
 
 main {
@@ -132,20 +133,21 @@ section {
 }
 
 .preview-text {
-    margin: 0;
-    padding: 0;
-    width: 542px;
+    max-width: 542px;
+}
 
+.uppercase-text,
+h2 {
+    font-family: Merriweather;
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .announce p {
     margin: 0;
-    padding: 0;
-    font-family: Merriweather;
     font-size: 60px;
     line-height: 66px;
     text-align: left;
-    text-transform: uppercase;
 }
 
 .announce .center-text {
@@ -160,7 +162,6 @@ section {
 
 .announce-text {
     font-weight: 400;
-    font-family: Golos Text;
     font-size: 18px;
     line-height: 23.4px;
     text-align: center;
@@ -168,26 +169,29 @@ section {
 }
 
 .links {
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 16px;
+
 }
 
-
 .links a {
-    font-family: Golos Text;
     font-size: 16px;
     font-weight: 500;
     line-height: 20.8px;
     display: flex;
     align-items: center;
-    width: 263px;
+    width: auto;
+    min-width: 263px;
     height: 72px;
     box-sizing: border-box;
     padding: 20px 49px;
     border-radius: 66px;
     text-decoration: none;
+}
+
+.links a p {
+    width: 100%;
     text-align: center;
 }
 
@@ -218,11 +222,8 @@ section {
 
 .about-tournament p,
 .support-tournament p {
-    font-family: Merriweather;
     font-size: 36px;
-    font-weight: 400;
     line-height: 48.6px;
-    text-transform: uppercase;
     display: inline;
     margin: 0;
 }
@@ -235,12 +236,13 @@ section {
 .support-content {
     display: flex;
     margin-bottom: 17px;
-    justify-content: space-between;
+    gap: 64px;
     align-items: center;
 }
 
 .support-text {
-    width: 764px;
+    max-width: 764px;
+    min-height: 195.43px;
 }
 
 .support-content img {
@@ -335,22 +337,22 @@ td:first-child {
 }
 
 .city-plan-title {
-    width: 806px;
+    max-width: 806px;
     margin-bottom: 54px;
     position: relative;
 }
 
+.city-plan-title h2 {
+    margin-right: 16px;
+}
+
 .city-plan-title a {
     display: inline-block;
-    margin-left: auto;
-    position: absolute;
-    right: 225px;
-    top: 72px;
 }
 
 .city-plan-title p {
     word-wrap: wrap;
-    width: 280px;
+    max-width: 280px;
     margin: 0;
 }
 
@@ -360,10 +362,7 @@ del {
 }
 
 h2 {
-    text-transform: uppercase;
-    font-family: Merriweather;
     font-size: 54px;
-    font-weight: 400;
     line-height: 64.8px;
     margin: 0;
 }
@@ -428,7 +427,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background-image: url('./img/backgroung_img.png');
     mix-blend-mode: color-burn;
 }
@@ -439,7 +438,7 @@ h2 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%; 
+    height: 100%;
     background-image: url('./img/union_stamp_paper.png');
     z-index: -1;
     opacity: 0.8;
@@ -477,14 +476,22 @@ h2 {
 }
 
 .arrow {
-    width: 44px;
+    min-width: 44px;
     height: 44px;
+    padding: 0;
+    appearance: none;
+    user-select: none;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: rgba(49, 49, 49, 1);
     border-radius: 50%;
     border: none;
+    cursor: pointer;
+    transition: all;
+    -webkit-tap-highlight-color: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
 }
 
 .arrow:hover {
@@ -540,7 +547,6 @@ h2 {
 }
 
 .participant a {
-    font-family: Golos Text;
     font-size: 16px;
     font-weight: 500;
     display: flex;
@@ -560,7 +566,7 @@ h2 {
 
 .running-line-box {
     display: block;
-    width: 1366px;
+    width: 100%;
     min-height: 60px;
     overflow: hidden;
 }
@@ -584,14 +590,11 @@ h2 {
 }
 
 .running-line-text {
-    font-family: Merriweather;
     font-size: 22px;
-    font-weight: 400;
     line-height: 24.2px;
     margin: 0;
     padding: 0;
     display: flex;
-    text-transform: uppercase;
     list-style: none;
     color: rgba(255, 255, 255, 1);
     animation: running-text 20s infinite linear
@@ -599,7 +602,7 @@ h2 {
 
 @keyframes running-text {
     0% {
-        transform: translate(1366px, 0);
+        transform: translate(100vh, 0);
     }
 
     100% {
